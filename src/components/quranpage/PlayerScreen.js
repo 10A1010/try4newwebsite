@@ -55,7 +55,7 @@ const PlayerScreen = ({ chapterDetail }) => {
         <div className=' bg-red list-group-item home-body2'>
           <span className='fw-bold'>Suuradda af Carabiga : </span> <br></br>
           <span className='fw-bold'>Suuradda af Ingiriisi: </span> <br></br>
-          <span className='fw-bold'>Meesha ka soo Degtay: </span> <br></br>
+          <span className='fw-bold'>Meeshay ku soo Degtay: </span> <br></br>
           <span className='fw-bold'>Magaca Macnahiis: </span> <br></br>
         </div>
       )}
