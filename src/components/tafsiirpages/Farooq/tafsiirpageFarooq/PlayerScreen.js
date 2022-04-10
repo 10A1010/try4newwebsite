@@ -3,9 +3,9 @@ import ReactPlayer from "react-player";
 
 const PlayerScreen = ({ chapterDetail }) => {
   const audiLink = (number) => number < 10 ? (
-    "https://aatry1000.s3.amazonaws.com/Tafsiir/TafsiirFarooq/00" + number + ".mp3") : (
+    "https://aatry1000.s3.amazonaws.com/Tafsiir/TafsiirFarooq/0" + number + ".mp3") : (
 
-    "https://aatry1000.s3.amazonaws.com/Tafsiir/TafsiirFarooq/0" + number + ".mp3")
+    "https://aatry1000.s3.amazonaws.com/Tafsiir/TafsiirFarooq/" + number + ".mp3")
 
   useEffect(() => {}, [chapterDetail]);
 
