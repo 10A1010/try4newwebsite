@@ -36,7 +36,7 @@ const Navbar = ({ toggle }) => {
       <Nav>
         <NavbarContainer>
           <NavBtn>
-            <NavBtnLink to='/'>Islamic Resources in Somali</NavBtnLink>
+            <NavBtnLink to='/'>Kheyraadka Islaamka</NavBtnLink>
           </NavBtn>
           <MobileIcon onClick={toggle}>
             <FaBars />
@@ -75,7 +75,7 @@ const Navbar = ({ toggle }) => {
                 exact='true'
                 offset={-80}
               >
-                Hadith
+                Xadiiska
               </NavLinks>
             </NavItem>
             <NavItem>
@@ -87,7 +87,7 @@ const Navbar = ({ toggle }) => {
                 exact='true'
                 offset={-80}
               >
-                Books
+                Kutubta
               </NavLinks>
             </NavItem>
           </NavMenu>

@@ -2,8 +2,10 @@ import { useEffect } from "react";
 import ReactPlayer from "react-player";
 
 const PlayerScreen = ({ chapterDetail }) => {
-  const audiLink = (number) =>
-    "https://aatry1000.s3.amazonaws.com/Tafsiir/TafsiirAli/00" + number + "++alfaatixa.mp3";
+  const audiLink = (number) => number < 10 ? (
+    "https://aatry1000.s3.amazonaws.com/Tafsiir/TafsiirAli/0"+ number +".mp3") : (
+
+      "https://aatry1000.s3.amazonaws.com/Tafsiir/TafsiirAli/"+ number +".mp3")
   useEffect(() => {}, [chapterDetail]);
 
   return (
@@ -21,7 +23,7 @@ const PlayerScreen = ({ chapterDetail }) => {
 
             <div className='div '>
               <ReactPlayer
-                url={audiLink(chapterDetail.id)}
+                url={audiLink(chapterDetail)}
                 controls={true}
                 playing={true}
                 width='100%'

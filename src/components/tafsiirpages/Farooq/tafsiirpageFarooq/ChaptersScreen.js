@@ -5,29 +5,26 @@ const ChaptersScreen = ({ chapters, chapterHandler }) => {
 
   return (
     <div className='min-vh-100 bg-red bg-transparent '>
-      <h1 className='fs-5 fw-bold r '>Lectures</h1>
+      <h1 className='fs-5 fw-bold r '>Taabo si aad u Dhageysato</h1>
       <ul className='list-group bg-transparent text-end'>
-        {chapters && chapters.length > 0 ? (
-          chapters.map((chapter) => (
-            <div key={chapter.id}>
+        <li>
+          {Array.from(Array(240), (e, i) => {
+            return (
               <li
+                key={i}
                 onClick={(e) => {
-                  chapterHandler(chapter)
-                  setActiveId(chapter.id)
+                  chapterHandler(i + 1);
+                  setActiveId(i);
                 }}
                 className={`list-group-item bg-transparent border-0 text-light py-0 d-flex justify-content-between curser ${
-                  chapter.id === activeId && 'active'
+                  i === activeId && "active"
                 }`}
               >
-                <span>Lecture - </span> <span>{chapter.id} </span>
+                <span>Muxaadaro - </span> <span>{i + 1}</span>
               </li>
-            </div>
-          ))
-        ) : (
-          <div className='text-center'>
-            <span className='spinner-border'></span>
-          </div>
-        )}
+            );
+          })}
+        </li>
       </ul>
     </div>
   );

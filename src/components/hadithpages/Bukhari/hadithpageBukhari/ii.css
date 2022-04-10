@@ -1,0 +1,41 @@
+
+.home-body {
+  height: 75vh;
+}
+
+
+.home-body2 {
+  height: 20vh;
+}
+.bg-red {
+  background-color: #000;
+  color: #fff;
+}
+
+.r {
+  text-align:center;
+}
+ .list-group-item {
+  background-color: #000;
+  border-color: #000;
+  text-align: center;
+}
+
+audio {
+  width: 100%;
+  outline: none;
+  background-color: #000;
+
+}
+
+.scroll {
+  height: 100%;
+  overflow: auto;
+}
+.curser {
+  cursor: pointer;
+}
+
+.active {
+  color: #01bf71 !important;
+}

@@ -35,24 +35,26 @@ const Services = ({
       <ServicesH1>{topLine1}</ServicesH1>
       <ServicesWrapper>
         <ServicesCard>
-          <CardLink to={`/${linkurl1}`}>Click Here</CardLink>
+          <CardLink to={`/${linkurl1}`}>Halkan Taabo</CardLink>
           <ServicesIcon src={img1} alt={alt} />
           <ServicesH2>{headline1}</ServicesH2>
           <ServicesP>{description1}</ServicesP>
           <br></br>
         </ServicesCard>
         <ServicesCard>
-          <CardLink to={`/${linkurl2}`}>Click Here</CardLink>
+          <CardLink to={`/${linkurl2}`}>Halkan Taabo</CardLink>
           <ServicesIcon src={img2} alt={alt} />
           <ServicesH2>{headline2}</ServicesH2>
           <ServicesP>{description2}</ServicesP>
           <br></br>
         </ServicesCard>
         <ServicesCard>
-          <CardLink to={`/${linkurl3}`}>Click Here</CardLink>
+          <CardLink to={`/${linkurl3}`}>Halkan Taabo</CardLink>
           <ServicesIcon src={img3} alt={alt} />
           <ServicesH2>{headline3}</ServicesH2>
           <ServicesP>{description3}</ServicesP>
+          <br></br>
+
         </ServicesCard>
       </ServicesWrapper>
     </ServicesContainer>

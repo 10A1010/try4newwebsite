@@ -3,9 +3,10 @@ import ReactPlayer from "react-player";
 
 const PlayerScreen = ({ chapterDetail }) => {
   const audiLink = (number) => number < 10 ? (
-    "https://aatry1000.s3.amazonaws.com/Tafsiir/TafsiirUmal/c00" + number + "t.mp3") : (
+    "https://aatry1000.s3.amazonaws.com/Hadith/Bukhari/0" + number + "-Tajriidusariix.mp3") : (
 
-    "https://aatry1000.s3.amazonaws.com/Tafsiir/TafsiirUmal/c0" + number + "t.mp3")
+      "https://aatry1000.s3.amazonaws.com/Hadith/Bukhari/" + number + "-Tajriidusariix.mp3")
+
   useEffect(() => {}, [chapterDetail]);
 
   return (
@@ -18,7 +19,7 @@ const PlayerScreen = ({ chapterDetail }) => {
             <li
               className={`list-group-item bg-transparent  d-flex justify-content-between fs-6`}
             ><br></br>
-              <span className='fw-bold'>Tafsiir By Sheikh Umal</span>{" "}
+              <span className='fw-bold'>Mukhtasar Saxiix Bukhaari</span>{" "}
             </li>
 
             <div className='div '>
@@ -34,7 +35,7 @@ const PlayerScreen = ({ chapterDetail }) => {
         </ul>
       ) : (
         <div className=' bg-red list-group-item home-body2'>
-          <span className='fw-bold'><br></br>Tafsiir By Sheikh Umal </span>{" "}<br></br>
+          <span className='fw-bold'><br></br>Mukhtasar Saxiix Bukhaari</span>{" "}<br></br>
         </div>
       )}
     </div>

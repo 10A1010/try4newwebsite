@@ -54,10 +54,10 @@ export const ServicesWrapper = styled.div`
 
 export const CardLink = styled(Link)`
   border-radius: 30px;
-  background: transparent;
+  background: #01BF71;
   white-space: nowrap;
-  padding: 10px 22px;
-  color: #fff;
+  padding: 2px 5px;
+  color: #000;
   font-size: 16px;
   outline: none;
   border: none;
@@ -67,7 +67,7 @@ export const CardLink = styled(Link)`
 
   &.hover {
     transition: all 0.2s ease-in-out;
-    background: #fff;
+    background: #000;
     color: #010606;
   }
 `;
@@ -80,7 +80,7 @@ export const ServicesCard = styled.div`
   align-items: center;
   border-radius: 10px;
   max-height: 340px;
-  padding: 12px;
+  padding: 0;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
   transition: all 0.2s ease-in-out;
 

@@ -6,11 +6,10 @@ import './ii.css';
 
 const HomeScreen = () => {
   const [chapters, setChapters] = useState([]);
-  const [tafAli, settafAli] = useState([]);
-
   const [audio, setAudio] = useState([]);
 
   const [chapterDetail, setChapterDetail] = useState(null);
+
 
   // Get All Chapters
   useEffect(() => {
@@ -24,14 +23,14 @@ const HomeScreen = () => {
     fetchData();
   });
 
-  const chapterHandler = (i) => {
-    setChapterDetail(i);
+  const chapterHandler = (chapter) => {
+    setChapterDetail(chapter);
   };
 
   return (
     <div className='row p-5 home-body  '>
       <div className='col-lg-4 col-md-4 col-12 col-12 scroll '>
-        <ChaptersScreen chapterHandler={chapterHandler} />
+        <ChaptersScreen chapters={chapters} chapterHandler={chapterHandler} />
       </div>
       <div className='col-lg-4 col-md-4 col-sm-12 col-12 '>
         <PlayerScreen

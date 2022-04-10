@@ -1,33 +1,31 @@
 import { useState } from "react";
-import tafAli from './tafAliDesc.json'
+import tafAli from "./tafAliDesc.json";
 
-const ChaptersScreen = ({ chapters, chapterHandler }) => {
+const ChaptersScreen = ({  chapterHandler }) => {
   const [activeId, setActiveId] = useState("");
 
   return (
     <div className='min-vh-100 bg-red bg-transparent '>
-      <h1 className='fs-5 fw-bold r '>Lectures</h1>
+      <h1 className='fs-5 fw-bold r '>Taabo si aad u Dhageysato </h1>
       <ul className='list-group bg-transparent text-end'>
-        {chapters && chapters.length > 0 ? (
-          tafAli.map((Ali) => (
-            <div key={Ali.id}>
+        <li>
+          {Array.from(Array(134), (e, i) => {
+            return (
               <li
+                key={i}
                 onClick={(e) => {
-                  setActiveId(Ali.id)
+                  chapterHandler(i+1);
+                  setActiveId(i);
                 }}
                 className={`list-group-item bg-transparent border-0 text-light py-0 d-flex justify-content-between curser ${
-                  Ali.id === activeId && 'active'
+                  i === activeId && "active"
                 }`}
               >
-                <span>Lecture - {Ali.id} </span> <span>{Ali.desc} </span>
+                <span>Muxaadaro - </span> <span>{i + 1}</span>
               </li>
-            </div>
-          ))
-        ) : (
-          <div className='text-center'>
-            <span className='spinner-border'></span>
-          </div>
-        )}
+            );
+          })}
+        </li>
       </ul>
     </div>
   );

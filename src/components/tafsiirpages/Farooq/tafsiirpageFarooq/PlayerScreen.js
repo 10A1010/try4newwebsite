@@ -24,7 +24,7 @@ const PlayerScreen = ({ chapterDetail }) => {
 
             <div className='div '>
               <ReactPlayer
-                url={audiLink(chapterDetail.id)}
+                url={audiLink(chapterDetail)}
                 controls={true}
                 playing={true}
                 width='100%'

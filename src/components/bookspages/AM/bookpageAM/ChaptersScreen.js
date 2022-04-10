@@ -7,13 +7,13 @@ const ChaptersScreen = ({ chapters, chapterHandler }) => {
     <div className='min-vh-100 bg-red bg-transparent '>
       <h1 className='fs-5 fw-bold r '>Taabo si aad u Dhageysato</h1>
       <ul className='list-group bg-transparent text-end'>
-         <li>
-          {Array.from(Array(67), (e, i) => {
+        <li>
+          {Array.from(Array(76), (e, i) => {
             return (
               <li
                 key={i}
                 onClick={(e) => {
-                  chapterHandler(i+1);
+                  chapterHandler(i + 1);
                   setActiveId(i);
                 }}
                 className={`list-group-item bg-transparent border-0 text-light py-0 d-flex justify-content-between curser ${
@@ -31,4 +31,3 @@ const ChaptersScreen = ({ chapters, chapterHandler }) => {
 };
 
 export default ChaptersScreen;
-
